@@ -1,0 +1,18 @@
+$bc-change-photo: #f0f0f0;
+
+.change-photo{
+    background-color: $bc-change-photo;
+    width: 140px;
+    margin: 0 auto 15px;
+    padding-bottom: 10px;
+
+    img{
+        width: 100px;
+        padding: 10px;
+    }
+   text-align: center;
+    cursor: pointer;
+    &:hover{
+        background-color: darken($bc-change-photo, 5%);
+    }
+}

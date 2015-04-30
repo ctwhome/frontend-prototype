@@ -1,0 +1,185 @@
+html  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    //background-color: #004254;
+    overflow: hidden;
+
+}
+
+
+// Transitions between screen loaders
+.main-containes {
+    &.ng-enter {
+        transition: 0.25s;
+        opacity: 0;
+    }
+    &.ng-enter-active {
+        opacity: 1;
+    }
+    &.ng-leave {
+        transition: 0.25s;
+        opacity: 1;
+    }
+    &.ng-leave-active {
+        opacity: 0;
+    }
+}
+
+    /*
+    * Page Loading
+    */
+    .page-on-load {
+        background: #fefefe;
+
+        .page-header,
+        .page-container,
+        .page-footer,
+        > .clearfix {
+            display: none;
+            transition: all 2s;
+        }
+    }
+
+    .hide {display: none}
+    a {cursor: pointer}
+    // Styles to fix angular bootstrap-ui
+    .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+    .main-container{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        overflow: hidden;
+    }
+
+
+
+// transitions for the app view
+#page-content-view{
+    -webkit-animation-duration: 0.3s;
+    -moz-animation-duration: 0.3s;
+    -o-animation-duration: 0.3s;
+
+}
+    .main-container-wrapper {
+        .page-content-wrapper {
+            @include transition(left, .3s, ease);
+        }
+        .page-sidebar {
+            @include transition(width, .3s, ease);
+            li{
+                //@include transition(height, .3s, ease);
+            }
+
+            span.title {
+                opacity: 1;
+                width: 160px;
+                @include transition(opacity, .3s, ease);
+            }
+        }
+
+        &.sidebar-closed {
+
+            .page-content-wrapper {
+                left: 54px;
+            }
+            .page-sidebar {
+                width: 54px;
+                ul {
+
+                    span.title {
+                        opacity: 0;
+                        display: none;
+                        @include transition(opacity, 0s, ease)
+
+                    }
+                    span.arrow {
+                        margin-top: -25px;
+                    }
+                    .sub-menu {
+                        margin-top: -55px;
+                        margin-left: 54px;
+                        li {
+                            height: 39px;
+                        }
+                    }
+                    li {
+                        height: 55px;
+
+                        a {
+                            min-height: 0;
+                            padding-left: 10px;
+                        }
+                        span.selected {
+                            right: -2px;
+                            top: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+// Breadcrumb
+.page-breadcrumb {
+    display: inline-block;
+    //float: left;
+    padding: 10px 6px;
+    margin: 0;
+    list-style: none;
+
+    > li  {
+        display: inline-block;
+
+        .ie8 & {
+            margin-right: 1px;
+        }
+
+        > a,
+        > span {
+            color: #888;
+            font-size: 13px;
+            text-shadow:none;
+        }
+
+        > i {
+            color: #aaa;
+            font-size: 14px;
+            text-shadow:none;
+        }
+
+        > i[class^="icon-"],
+        > i[class*="icon-"] {
+            color: darken(#999, 5%);
+        }
+    }
+}
+
+.noshadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.modal.fade {
+    opacity: 1;
+}
+
+.modal.fade .modal-dialog, .modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.modal{
+    margin-top: 90px;
+    .modal-content{
+        @extend .noshadow;
+    }
+
+}
