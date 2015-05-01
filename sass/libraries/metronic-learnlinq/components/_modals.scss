@@ -2,6 +2,27 @@
 Customized Bootstrap Modal 
 ***/
 
+
+// Delete animation into the modals
+.modal.fade {
+    opacity: 1;
+}
+
+.modal.fade .modal-dialog, .modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.modal {
+    margin-top: 90px;
+    .modal-content {
+        @extend .noshadow;
+    }
+}
+
+
+
 .modal {
     z-index: $zindex-modal;
 
@@ -21,6 +42,13 @@ Customized Bootstrap Modal
 
         .close {
             margin-top: 0px !important;
+        }
+    }
+
+    .modal-footer{
+        padding: auto ;
+        .btn{
+            margin-left: 15px;
         }
     }
 
@@ -83,29 +111,5 @@ Customized Bootstrap Modal
   .modal-full.modal-dialog {
     width: auto;
   }   
-
-}
-
-@if $theme-type == "material-design" { 
-
-    .modal {
-        .modal-content {
-            @extend .md-shadow-z-3;
-            @include border-radius($general-border-radius);
-            border: 0;
-
-            .modal-title {
-                font-weight: 400;
-            }
-
-            .modal-footer {
-                border: 0;
-            }
-        }
-    }
-
-    .modal-backdrop.in {
-        @include opacity(0.2);
-    }
 
 }

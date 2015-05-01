@@ -276,23 +276,3 @@
     color: $text-color;
   }
 }
-
-
-// Material Design Transitions
-
-@mixin  ease-out($duration: 450ms, $property: all, $delay: 0ms) {
-  transition: $property $duration cubic-bezier(0.23, 1, 0.32, 1) $delay;
-}
-
-@mixin  pulsate($animation-name, $start-size: 0.75, $end-size: 1, $duration: 1.5s) {
-  @keyframes "#{$animation-name}" {
-    0%, 100% {
-      transform: scale($start-size);
-    }
-    50% {
-      transform: scale($end-size);
-    }
-  }  
-  animation: $animation-name $duration ease 0s infinite;
-}
-

@@ -1,44 +1,48 @@
+@import "libraries/variables-and-colors";
+
+
+@import "vendor/bootstrap/bootstrap/mixins";
+@import 'libraries/metronic-learnlinq/components/mixins';           // vendor metronic-learnlinq framework mixings
+
+
 // Import the fonts
-@import "framework/fonts";
-@import "framework/colors";
+@import "libraries/fonts";
 
-// Bootstrap
-@import 'lib/bootstrap';
-
-// Metronic theme
-@import 'lib/variables';                   // lib metronic framework variables
-@import 'lib/components/mixins';           // lib metronic framework mixings
-@import 'framework/variables';             // theme level variables
-@import 'lib/layout/print';                // print layout
-@import 'lib/layout/header';               // page header
-@import 'lib/layout/page-container';       // page main container
-@import 'lib/layout/sidebar';              // page sidebar
-@import 'lib/layout/content';              // page consnde
-@import 'lib/layout/footer';               // page footer
-@import 'lib/components';
-@import 'lib/plugins';
-@import 'lib/themes/grey';                 //  blue, light, dark, default, grey(default)
-
-// Animate.css
-@import 'lib/animate';
 
 
 /* BASE - Base Variable file along with starting point Mixins and Placeholders.
 ========================================================================== */
-@import 'framework/responsive';            // If not using any framework
+@import 'libraries/responsive';            // If not using any framework
+@import 'libraries/main';
 
-/* FRAMEWORK - Structure and layout files.
+/* libraries - Structure and layout files.
 ========================================================================== */
-@import 'framework/components/checkbox';
-@import 'framework/components/flip';
-@import 'framework/components/strength';
-@import 'framework/header';
+// Metronic theme
+//@import 'libraries/variables';                                      // vendor metronic-learnlinq framework variables
 
-/* VIEWS - PAGES
+
+@import 'libraries/metronic-learnlinq/layout/print';                // print layout
+@import 'libraries/metronic-learnlinq/layout/header';               // page header
+@import 'libraries/metronic-learnlinq/layout/page-container';       // page main container
+@import 'libraries/metronic-learnlinq/layout/sidebar';              // page sidebar
+@import 'libraries/metronic-learnlinq/layout/content';              // page consnde
+@import 'libraries/metronic-learnlinq/layout/footer';               // page footer
+@import 'libraries/metronic-learnlinq/components';
+@import 'libraries/metronic-learnlinq/plugins';
+@import 'libraries/metronic-learnlinq/themes/grey';                 //  blue, light, dark, default, grey(default)
+
+
+
+/* Components - Structure and layout files.
 ========================================================================== */
-@import 'framework/main';
-@import 'framework/login';
-@import 'framework/user-profile';
 
+@import 'components/sidebar';
+@import 'components/checkbox';
+@import 'components/strength';
+@import 'sections/header';
+@import 'components/breadcrumbs';
 
-
+/* Sections - PAGES
+========================================================================== */
+@import 'sections/login';
+@import 'sections/user-profile';

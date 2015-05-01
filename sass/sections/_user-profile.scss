@@ -25,9 +25,12 @@ $bc-change-photo: #f0f0f0;
         color: #4c4c4c;
     }
     &.error {
-
+        .form-control{
+            border: 2px $brand-primary solid;
+        }
         .error {
-            color: blue;
+            color: $brand-primary;
+            font-size: .9em;
         }
 
     }

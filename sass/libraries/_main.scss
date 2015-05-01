@@ -1,0 +1,52 @@
+body {
+    // Delete the rebound in MacOS
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    overflow: hidden;
+}
+
+/*
+* Page Loading
+* in app view
+*/
+
+#page-content-view {
+    -webkit-animation-duration: 0.3s;
+    -moz-animation-duration: 0.3s;
+    -o-animation-duration: 0.3s;
+}
+
+.hide {
+    display: none
+}
+
+a {
+    cursor: pointer
+}
+
+// Styles to fix angular bootstrap-ui
+.nav, .pagination, .carousel, .panel-title a {
+    cursor: pointer;
+}
+
+.main-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    overflow: auto;
+}
+
+
+
+// Delete shadow of the elements
+.noshadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+

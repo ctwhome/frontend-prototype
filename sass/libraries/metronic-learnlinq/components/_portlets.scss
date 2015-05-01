@@ -8,8 +8,16 @@ Portlets
     overflow: hidden;
 }
 
-/* Basic portlet */
+.fixed-portlet{
+    position: absolute;                         // THIS IS THE PORTLET OVERFLOW
+    top: 70px;
+    bottom: 60px;
+    right: 20px;
+    left: 20px;
+    overflow: auto;
+}
 
+/* Basic portlet */
 .portlet  {
     margin-top: 0px;
     margin-bottom: 25px;
