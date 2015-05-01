@@ -20666,6 +20666,10 @@ a {
   width: 140px;
   margin: 0 auto 15px;
   padding-bottom: 10px;
+  border-radius: 5px !important;
+  -webkit-transition: background, .3, ease;
+  -o-transition: background, .3, ease;
+  transition: background, .3, ease;
   text-align: center;
   cursor: pointer; }
   .change-photo img {
@@ -20673,6 +20677,12 @@ a {
     padding: 10px; }
   .change-photo:hover {
     background-color: #e3e3e3; }
+
+.form-group .info {
+  font-size: .9em;
+  color: #4c4c4c; }
+.form-group.error .error {
+  color: blue; }
 
 
 /*# sourceMappingURL=styles.css.map */
