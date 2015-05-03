@@ -4,94 +4,118 @@
     <small>Work in progress</small>
 </h3>
 
-</div>
 <!-- END PAGE HEADER-->
 <!-- BEGIN PAGE CONTENT-->
-<div class="portlet light">
-    <div class="portlet-body">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="col-md-6">
+
+<div class="library-section">
+    <div class="portlet light">
+        <div class="portlet-body">
+            <div class="row">
+                <div class="col-md-12">
+
                     <div class="input-group custom-search-form">
-                        <input type="text" class="form-control">
-                          <span class="input-group-btn">
-                          <button class="btn btn-default" type="button">
-                              <span class="glyphicon glyphicon-search"></span>
-                          </button>
-                         </span>
+                        <input type="text" class="form-control" placeholder="Search material">
+                        <button class="btn btn-special" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
                     </div>
-                </div>
 
-                <div class="col-md-3 col-md-offset-3">
-                    <button class="btn btn-primary" type="button">
-                        Add element
-                    </button>
-                </div>
-                <br/>
-                <hr/>
 
-                <div class="col-md-9">
-                    <ul>
-                        <li>
-                            <p>Element name</p>
-                            <p><span>tag</span> <span>tag</span> <span>tag</span></p>
-                            <p>Edit button</p>
-                        </li>
-                        <li>
-                            <p>Element name</p>
-                            <p><span>tag</span> <span>tag</span> <span>tag</span></p>
-                            <p>Edit button</p>
-                        </li>
-                        <li>
-                            <p>Element name</p>
-                            <p><span>tag</span> <span>tag</span> <span>tag</span></p>
-                            <p>Edit button</p>
-                        </li>
-                        <li>
-                            <p>Element name</p>
-                            <p><span>tag</span> <span>tag</span> <span>tag</span></p>
-                            <p>Edit button</p>
-                        </li>
-                        <li>
-                            <p>Element name</p>
-                            <p><span>tag</span> <span>tag</span> <span>tag</span></p>
-                            <p>Edit button</p>
-                        </li>
-                        <li>
-                            <p>Element name</p>
-                            <p><span>tag</span><span>tag</span><span>tag</span></p>
-                            <p>Edit button</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h3>Refine by</h3>
-                    <ul>
-                        <li>Types (Number)
-                            <ul>
-                                <li>
-                                    <input type="checkbox"/> Teplate (Number)
-                                <li>
-                                    <input type="checkbox"/> Books (Number)
-                                </li>
-                                <li>...</li>
+                    <div class="btn-group" role="group" ng-controller="dropdown-controller">
+
+
+                        <!-- Simple dropdown -->
+                        <!-- Split button -->
+                        <div class="btn-group" dropdown>
+                            <button type="button" class="btn btn-danger">
+                    <label class="btn checkbox">
+                        <input type="checkbox">
+
+                        <div class="cb-check"></div>
+
+                    </label>
+                            </button>
+                            <button type="button" class="btn btn-danger dropdown-toggle" dropdown-toggle>
+                                <span class="caret"></span>
+                                <span class="sr-only">Split button!</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-default">
+                                <li><a href="">Select all</a></li>
+                                <li><a href=""> Select template</a></li>
+                                <li><a href=""> Select others </a></li>
                             </ul>
-                        </li>
-                        <li>Types (Number)
-                            <ul>
-                                <li>
-                                    <input type="checkbox"/> Others (Number)
-                                <li>
-                                    <input type="checkbox"/> Others (Number)
-                                </li>
-                                <li>...</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                        </div>
 
+                        <!-- Single button -->
+                        <div class="btn-group" dropdown is-open="status.isopen">
+                            <button type="button" class="btn btn-primary dropdown-toggle" dropdown-toggle ng-disabled="disabled">
+                                <i class="fa fa-archive"/> <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+
+                        <button type="button" class="btn btn-primary"><i class="fa fa-trash"></i></button>
+                    </div>
+
+
+
+
+
+                    <div class="pull-right">
+                        <button class="btn btn-primary" type="button">
+                            Add element
+                        </button>
+                    </div>
+                    <br/>
+                    <hr/>
+
+                    <div class="col-md-9">
+                        <ul>
+                            <li ng-repeat>
+                                <p>Element name</p>
+
+                                <p><span>tag</span> <span>tag</span> <span>tag</span></p>
+
+                                <p>Edit button</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Refine by</h3>
+                        <ul>
+                            <li>Types (Number)
+                                <ul>
+                                    <li>
+                                        <input type="checkbox"/> Teplate (Number)
+                                    <li>
+                                        <input type="checkbox"/> Books (Number)
+                                    </li>
+                                    <li>...</li>
+                                </ul>
+                            </li>
+                            <li>Types (Number)
+                                <ul>
+                                    <li>
+                                        <input type="checkbox"/> Others (Number)
+                                    <li>
+                                        <input type="checkbox"/> Others (Number)
+                                    </li>
+                                    <li>...</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
+    <!-- END PAGE CONTENT-->
 </div>
-<!-- END PAGE CONTENT-->

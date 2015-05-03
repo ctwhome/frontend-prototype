@@ -158,25 +158,25 @@ Select2 Plugin
 }
 
 .select2-container-multi {
-    @include border-radius(4px);      
+    @include border-radius(4px);
 
     .select2-choices {
-        @include border-radius(4px);       
+        @include border-radius(4px);
     }
 
     &.select2-dropdown-open {        
-        @include border-radius(4px 4px 0 0);       
+        @include border-radius(4px 4px 0 0);
 
         .select2-choices {
-            @include border-radius(4px 4px 0 0);       
+            @include border-radius(4px 4px 0 0);
         }    
     }      
 
     &.select2-dropdown-open.select2-drop-above {
-        @include border-radius(0 0 4px 4px);       
+        @include border-radius(0 0 4px 4px);
 
         .select2-choices {
-            @include border-radius(0 0 4px 4px);       
+            @include border-radius(0 0 4px 4px);
         } 
     }
 }

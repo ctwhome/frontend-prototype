@@ -2,8 +2,35 @@
 Form Layouts
 ****/
 
-/* Static info */
+label{
+    font-weight: 300;
+}
 
+// Errors
+.form-group {
+    .info {
+        font-size: .9em;
+        color: #4c4c4c;
+    }
+    .error{
+        display: none;
+    }
+    &.error {
+        .form-control{
+            border: 2px $brand-primary solid;
+        }
+        .error {
+            display: block;
+            color: $brand-primary;
+            font-size: .9em;
+        }
+
+    }
+}
+
+
+
+/* Static info */
 .static-info {
   margin-bottom: 10px;
 
@@ -257,6 +284,7 @@ Form Layouts
     .form-group {
         margin: 0;
         border-bottom: 1px solid #efefef;
+
 
         > div {  
             padding: 15px; 

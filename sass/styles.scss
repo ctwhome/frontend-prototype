@@ -1,3 +1,4 @@
+//Common libraries for every sass
 @import "libraries/variables-and-colors";
 
 
@@ -17,9 +18,6 @@
 
 /* libraries - Structure and layout files.
 ========================================================================== */
-// Metronic theme
-//@import 'libraries/variables';                                      // vendor metronic-learnlinq framework variables
-
 
 @import 'libraries/metronic-learnlinq/layout/print';                // print layout
 @import 'libraries/metronic-learnlinq/layout/header';               // page header
@@ -32,17 +30,20 @@
 @import 'libraries/metronic-learnlinq/themes/grey';                 //  blue, light, dark, default, grey(default)
 
 
-
 /* Components - Structure and layout files.
 ========================================================================== */
 
 @import 'components/sidebar';
 @import 'components/checkbox';
+@import 'components/selects';
+@import 'components/fieldset';
 @import 'components/strength';
 @import 'sections/header';
 @import 'components/breadcrumbs';
+@import 'components/animation-background-squares';
 
 /* Sections - PAGES
 ========================================================================== */
 @import 'sections/login';
 @import 'sections/user-profile';
+@import 'sections/library';

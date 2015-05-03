@@ -1,0 +1,24 @@
+.custom-search-form{
+    display: inline-block;
+    margin-right: 30px;
+    .form-control{
+        width: 350px;
+        border: 1px solid #e4e4e4;
+        border-right: none;
+        height: 35px;
+        font-size: 1.1em;
+    }
+    .btn-special{
+        height: 35px;
+        width: 80px;
+    }
+}
+
+.library-section{
+    .btn-group{
+        label{
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

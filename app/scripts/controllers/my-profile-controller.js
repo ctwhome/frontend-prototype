@@ -49,4 +49,9 @@ App.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
     $scope.cancel = function () {
         $modalInstance.dismiss('cancel');
     };
+
+    // FIXME Only for debuggong, show errors
+    $scope.viewErrors = function(){
+            $scope.showError = !$scope.showError
+    }
 });

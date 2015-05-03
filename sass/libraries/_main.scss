@@ -26,6 +26,9 @@ body {
 a {
     cursor: pointer
 }
+b,strong{
+    font-weight: 600;
+}
 
 // Styles to fix angular bootstrap-ui
 .nav, .pagination, .carousel, .panel-title a {

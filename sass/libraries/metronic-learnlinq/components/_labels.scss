@@ -5,7 +5,7 @@ Customized Bootstrap Labels
 .label {
     text-shadow: none !important;
     font-size: 13px;  
-    font-weight: 300;  
+    font-weight: 100 !important;
     padding: 3px 6px 3px 6px;
     color: #fff;
     font-family: $font-family-primary;   
@@ -15,12 +15,7 @@ Customized Bootstrap Labels
         padding: 0px 4px 1px 4px;  
     }
 
-    h1 &,
-    h2 &,
-    h3 &,
-    h4 &,
-    h5 &,
-    h6 & {
+    h1 &,h2 &,h3 &,h4 &,h5 &,h6 & {
         font-size:75%;
     }
 }

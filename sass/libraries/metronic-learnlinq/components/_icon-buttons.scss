@@ -100,24 +100,3 @@ Custom icon buttons
         filter: none;    
     }
 }
-
-@if $theme-type == "material-design" {  
-  .icon-btn { 
-    border: 0;
-    transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
-    
-    > div {
-        color: $btn-default-color;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 11px;
-    }
-
-    @extend .md-shadow-z-1;  
-
-    &:hover {
-        text-decoration: none;
-        @extend .md-shadow-z-2-hover; 
-    }
-  }
-}

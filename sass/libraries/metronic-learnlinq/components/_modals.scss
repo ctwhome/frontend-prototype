@@ -2,7 +2,13 @@
 Customized Bootstrap Modal 
 ***/
 
-
+.modal{
+    form{
+        label{
+            @extend .centered;
+        }
+    }
+}
 // Delete animation into the modals
 .modal.fade {
     opacity: 1;

@@ -8,14 +8,16 @@ $logo-darkpink:                     #B74278 !default;
 // Bootstrap colors
 
 $brand-default:         			#c6c6c6 !default;
-$brand-primary:                     #40B8D5 !default; // #337ab7
+$brand-primary:                     #27B9D4 !default; // #337ab7
 $brand-success:         		 	$logo-green !default;
 $brand-info:            		 	#89C4F4 !default;
 $brand-warning:         		 	#dfba49 !default;
 $brand-danger:          		 	#F3565D !default;
 
+$brand-special:                     $logo-yellow !default;
+
 // inputs forms
-$input-border-focus-color : $logo-yellow;
+$input-border-focus-color :         $logo-yellow;
 
 
 // Global text color on <body>
@@ -28,7 +30,7 @@ $text-light-color:     	 			#ffffff !default;
 $text-muted-color:      			#444444 !default;
 
 // Global textual link color.
-$link-color:            			#5b9bd1 !default;
+$link-color:            			darken($brand-primary, 15%) !default;
 
 // Link hover color.
 $link-hover-color:      			darken($link-color, 15%) !default;
@@ -89,6 +91,11 @@ $btn-danger-color:               	#fff !default;
 $btn-danger-bg:                  	$brand-danger !default;
 $btn-danger-border:              	darken($btn-danger-bg, 5%) !default;
 
+$btn-special-color:               	#fff !default;
+$btn-special-bg:                  	$brand-special !default;
+$btn-special-border:              	darken($btn-special-bg, 5%) !default;
+
+
 $btn-link-disabled-color:        	#eee !default;
 
 
@@ -130,7 +137,7 @@ $font-size-h6:            			ceil(($font-size-base * 0.85)) !default; // ~12px
 
 //== Forms Controls
 $input-md-label-color:        		#888888;
-$input-md-input-border:        		#e5e5e5;
+$input-md-input-border:        		#b6b6b6;
 $input-md-label-opacity:      		1;
 $input-md-label-font-size: 			13px;
 $input-md-placeholder:	 			#999;
@@ -143,8 +150,8 @@ $input-bg:                       	#fff !default;
 $input-bg-disabled:              	#eeeeee !default;
 
 $input-color:                    	#333 !default;
-$input-border:                   	#e5e5e5 !default;
-$input-border-focus:             	#999 !default;
+$input-border:                   	#b6b6b6 !default;
+$input-border-focus: #757575 !default;
 
 $input-color-placeholder:        	lighten($input-color, 50%) !default;
 $input-icon-color:               	#999 !default;
@@ -270,11 +277,11 @@ $page-content-solid-bg-color:                                           #F1F3FA 
 $page-footer-height:                                                    33px !default;
 
 // Z-index master list
-$zindex-header-fixed:                                                   9995 !default;
-$zindex-header-static:                                                  9995 !default;
-$zindex-quick-sidebar:                                                  9994 !default;
-$zindex-quick-sidebar-full-height:										9996 !default;
-$zindex-sidebar-fixed:     												10000 !default;
-$zindex-footer-fixed:      												10000 !default;
-$zindex-sidebar-submenu:   												2000 !default;
-$zindex-go-to-top:   												    10001 !default;
+$zindex-header-fixed:                                                   995 !default;
+$zindex-header-static:                                                  995 !default;
+$zindex-quick-sidebar:                                                  994 !default;
+$zindex-quick-sidebar-full-height:										996 !default;
+$zindex-sidebar-fixed:     												1000 !default;
+$zindex-footer-fixed:      												1000 !default;
+$zindex-sidebar-submenu:   												200 !default;
+$zindex-go-to-top:   												    1001 !default;
