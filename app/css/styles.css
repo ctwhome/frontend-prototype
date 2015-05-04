@@ -46,6 +46,8 @@ body {
 
 a {
   cursor: pointer; }
+  a:hover {
+    text-decoration: none !important; }
 
 b, strong {
   font-weight: 600; }
@@ -60,6 +62,20 @@ b, strong {
   right: 0;
   bottom: 0px;
   overflow: auto; }
+
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+.portlet p, .portlet a, .portlet label, .portlet input, .portlet span, .portlet div, .portlet strong, .portlet li, .portlet h1, .portlet h2, .portlet h3, .portlet h4, .portlet h5, .portlet h6, .modal p, .modal a, .modal label, .modal input, .modal span, .modal div, .modal strong, .modal li, .modal h1, .modal h2, .modal h3, .modal h4, .modal h5, .modal h6 {
+  -webkit-user-select: text;
+  -khtml-user-select: text;
+  -moz-user-select: text;
+  -o-user-select: text;
+  user-select: text; }
 
 .noshadow, .modal .modal-content {
   -webkit-box-shadow: none;
@@ -3820,6 +3836,7 @@ Portlets
   margin-top: 0px;
   margin-bottom: 25px;
   padding: 0px;
+  position: relative;
   -webkit-border-radius: 0px ;
   -moz-border-radius: 0px ;
   -ms-border-radius: 0px ;
@@ -12868,8 +12885,8 @@ input[type="checkbox"] {
   display: none; }
 
 .cb-check {
-  height: 1.8rem;
-  width: 1.8rem;
+  height: 1.6rem;
+  width: 1.6rem;
   display: inline-block;
   vertical-align: bottom;
   border: 1px solid #bbb;
@@ -13231,18 +13248,138 @@ ul#strength {
   display: inline-block;
   margin-right: 30px; }
   .custom-search-form .form-control {
-    width: 350px;
+    width: 340px;
     border: 1px solid #e4e4e4;
     border-right: none;
     height: 35px;
     font-size: 1.1em; }
+    .custom-search-form .form-control:focus {
+      border: 1px solid #F7A649; }
   .custom-search-form .btn-special {
     height: 35px;
     width: 80px; }
 
-.library-section .btn-group label {
+.library-section .add-element {
+  padding: auto 30px; }
+
+.btn-group.filter .dropdown-toggle, .btn-group.filter .single-button {
+  width: 75px;
+  height: 35px; }
+.btn-group.filter .btn {
+  background-color: #f2f2f2;
+  color: #999999;
+  border: 1px solid #dadede; }
+  .btn-group.filter .btn i {
+    font-size: 1.2em;
+    margin-right: 7px; }
+  .btn-group.filter .btn:hover {
+    background-color: #d8d8d8; }
+  .btn-group.filter .btn.single-button i {
+    font-size: 1.4em;
+    margin-right: 0px; }
+.btn-group.filter .btn-checkbox .btn {
+  border-right: none; }
+.btn-group.filter .btn-checkbox .split.dropdown-toggle {
+  border-left: none;
+  border-right: none; }
+
+.btn-group.btn-checkbox label {
   padding: 0;
   margin: 0; }
+.btn-group.btn-checkbox .btn {
+  width: 45px; }
+.btn-group.btn-checkbox .split.dropdown-toggle {
+  height: 35px;
+  width: 30px; }
+
+.portlet-complete-header {
+  background-color: #fff;
+  padding: 20px 10px;
+  position: relative; }
+
+.portlet-complete {
+  background-color: #fff;
+  position: absolute;
+  top: 147px;
+  right: 20px;
+  left: 20px;
+  bottom: 10px;
+  overflow: hidden; }
+  .portlet-complete .main {
+    position: absolute;
+    padding: 7px 10px;
+    top: 5px;
+    right: 22%;
+    left: 0px;
+    bottom: 0px;
+    overflow: auto; }
+  .portlet-complete .filter-side {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    left: 78%;
+    bottom: 0px;
+    overflow: hidden;
+    padding-left: 0px; }
+    .portlet-complete .filter-side .header {
+      padding-left: 10px;
+      font-size: 1.5em;
+      position: relative;
+      padding-top: 10px; }
+    .portlet-complete .filter-side .body {
+      padding-left: 10px;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      left: 0;
+      bottom: 0px;
+      overflow: auto; }
+      .portlet-complete .filter-side .body ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 10px 10px; }
+        .portlet-complete .filter-side .body ul li {
+          padding: 0 0 10px 0; }
+          .portlet-complete .filter-side .body ul li label.checkbox {
+            margin: 0;
+            padding: 0; }
+
+.material {
+  position: relative;
+  background-color: #fafafa;
+  height: 60px;
+  vertical-align: middle; }
+  .material.type-type1 {
+    border-left: 3px #F7A649 solid; }
+  .material:hover {
+    background-color: #f2f2f2; }
+  .material .selector {
+    float: left;
+    margin-right: 20px; }
+    .material .selector img {
+      width: 40px;
+      display: inline-block; }
+  .material .name {
+    padding-top: 10px;
+    font-size: 1.1em; }
+  .material .type {
+    display: inline-block;
+    font-weight: 600;
+    margin-right: 10px; }
+  .material .description {
+    display: inline-block;
+    font-weight: 400; }
+  .material .actions {
+    position: absolute;
+    right: 20px;
+    top: 20px; }
+    .material .actions i {
+      cursor: pointer;
+      margin-left: 15px;
+      font-size: 1.2em;
+      color: #CCCCCC; }
+      .material .actions i:hover {
+        color: #666666; }
 
 
 /*# sourceMappingURL=styles.css.map */

@@ -21,7 +21,8 @@ Portlets
 .portlet  {
     margin-top: 0px;
     margin-bottom: 25px;
-    padding: 0px; 
+    padding: 0px;
+    position: relative;
     
     @include border-radius($portlet-border-radius);
 
@@ -681,40 +682,4 @@ Portlets
 .portlet-sortable-empty {   
     box-shadow: none !important;
     height: 45px;          
-}
-
-@if $theme-type == "material-design" {
-    .portlet {
-        @extend .md-shadow-z-2;  
-
-        border: 0 !important;        
-        padding: 10px;
-
-        > .portlet-title {
-            border: 0 !important;
-            margin-bottom: 0;
-        }
-
-        &.light.bordered.form-fit {
-            > .portlet-title {
-                border-bottom: 1px solid #eee !important;
-            }
-        }
-
-        > .portlet-body {
-            border: 0 !important;
-        }
-
-        &:not(.light):not(.box):not(.solid) {
-            padding: 0 10px 10px 10px;
-        }
-
-        &.box > .portlet-title > .actions {
-            padding: 7px 0 4px 0;
-        }
-
-        &.light .portlet-body {
-            padding-top: 5px;
-        }
-    }
 }

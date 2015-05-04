@@ -1,3 +1,12 @@
+// Global text color on <body>
+$text-color:            			#333333 !default;
+
+// Global light text color on <body>
+$text-light-color:     	 			#ffffff !default;
+
+// Global muted text color on <body>
+$text-muted-color:      			#444444 !default;
+
 
 // Logo colors
 $logo-yellow:                       #F7A649 !default;
@@ -16,18 +25,14 @@ $brand-danger:          		 	#F3565D !default;
 
 $brand-special:                     $logo-yellow !default;
 
+$button-filter-bc:                  #f2f2f2 !default;
+$button-filter-bc-hover:            darken($button-filter-bc, 10%) !default;
+$button-filter-text:                #999999 !default;
+$button-filter-border:              #dadede !default;
+
 // inputs forms
 $input-border-focus-color :         $logo-yellow;
 
-
-// Global text color on <body>
-$text-color:            			#333333 !default;
-
-// Global light text color on <body>
-$text-light-color:     	 			#ffffff !default;
-
-// Global muted text color on <body>
-$text-muted-color:      			#444444 !default;
 
 // Global textual link color.
 $link-color:            			darken($brand-primary, 15%) !default;

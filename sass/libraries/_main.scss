@@ -24,7 +24,10 @@ body {
 }
 
 a {
-    cursor: pointer
+    cursor: pointer;
+    &:hover{
+        text-decoration: none !important;
+    }
 }
 b,strong{
     font-weight: 600;
@@ -43,6 +46,26 @@ b,strong{
     bottom: 0px;
     overflow: auto;
 }
+
+// Disable select except parragrapsh and links
+*{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.portlet, .modal{
+    p, a, label, input, span, div, strong, li, h1,h2,h3,h4,h5,h6{
+        -webkit-user-select: text;
+        -khtml-user-select: text;
+        -moz-user-select: text;
+        -o-user-select: text;
+        user-select: text;
+    }
+}
+
+
 
 
 
