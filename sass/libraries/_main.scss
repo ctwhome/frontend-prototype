@@ -65,10 +65,6 @@ b,strong{
     }
 }
 
-
-
-
-
 // Delete shadow of the elements
 .noshadow {
     -webkit-box-shadow: none;
@@ -76,3 +72,17 @@ b,strong{
     box-shadow: none;
 }
 
+// Box with no results message
+.no-results{
+    color:$button-filter-text;
+    font-size: 1.2em;
+    font-weight: 300;
+    background-color: $list-bc;
+    height: 55px;
+    border-left: 3px solid darken($list-bc-hover, 5%);
+    padding: 15px;
+
+    //&:hover{
+    //    background-color: $list-bc-hover;
+    //}
+}

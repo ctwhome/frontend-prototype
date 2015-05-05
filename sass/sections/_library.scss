@@ -18,8 +18,10 @@
 }
 
 .library-section {
-    .add-element {
+    // Button add element
+    .add-element-button {
         padding: auto 30px;
+        float: right;
     }
 }
 
@@ -68,10 +70,7 @@
         margin: 0;
     }
     .btn {
-        //height: 20px;
         width: 45px;
-        //padding: auto 0px;
-
     }
     .split.dropdown-toggle {
         height: 35px;
@@ -82,7 +81,6 @@
 //
 // Abolute position for contents with scrollbar
 //
-
 .portlet-complete-header{
     background-color: #fff;
     padding: 20px 10px;
@@ -140,19 +138,18 @@
 // Material
 .material{
     position: relative;
+    margin-bottom: 10px;
+    background-color: $list-bc;
+    height: 55px;
+    vertical-align: middle;
+    &:hover{
+        background-color: $list-bc-hover;
+    }
     //Asign colors for the different types
     &.type-type1{
         border-left: 3px $logo-yellow solid;
     }
 
-
-    background-color: #fafafa;
-    height: 60px;
-    vertical-align: middle;
-    &:hover{
-        background-color: #f2f2f2;
-    }
-    
     .selector{
         float: left;
         margin-right: 20px;
