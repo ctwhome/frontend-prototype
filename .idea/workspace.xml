@@ -26,7 +26,7 @@
           <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.0">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="237" column="38" selection-start-line="237" selection-start-column="38" selection-end-line="237" selection-end-column="38" />
                   <folding>
                     <element signature="e#304#2556#0" expanded="false" />
@@ -41,7 +41,7 @@
           <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sass/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-10.45098">
+                <state vertical-scroll-proportion="0.0">
                   <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
                   <folding />
                 </state>
@@ -51,8 +51,8 @@
           <file leaf-file-name="_user-profile.scss" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sass/framework/_user-profile.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.18681319">
-                  <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+                <state vertical-scroll-proportion="0.4352">
+                  <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
@@ -150,11 +150,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="my-profile-modal.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="my-profile-modal.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/modals/my-profile-modal.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.64972526">
+                <state vertical-scroll-proportion="-11.884615">
                   <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.49325627">
+                  <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -190,9 +200,9 @@
         <option value="$PROJECT_DIR$/sass/framework/components/_strength.scss" />
         <option value="$PROJECT_DIR$/app/views/my-profile-template.html" />
         <option value="$PROJECT_DIR$/sass/styles.scss" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/views/modals/my-profile-modal.html" />
         <option value="$PROJECT_DIR$/sass/framework/_user-profile.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -257,6 +267,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -268,7 +279,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,7 +287,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value=".git&#9;FILE&#9;file:///Users/ctw/Sites/github/frontend-prototype/.gitignore&#10;stre&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/sass/framework/components/_strength.scss&#10;app&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/scripts/app.js&#10;sty&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/sass/styles.scss&#10;main&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/sass/framework/_main.scss&#10;index&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/index.html&#10;nav&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/views/main/menu-navbar.html&#10;drop&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/sass/lib/components/_dropdowns.scss&#10;sidebar&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/views/main/menu-sidebar.html&#10;side&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/sass/lib/layout/_sidebar.scss&#10;men&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/views/main/menu-navbar.html&#10;login&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/views/login-page-template.html&#10;footer&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/views/main/footer.html&#10;menu&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/views/main/menu-navbar.html&#10;foot&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/views/main/footer.html&#10;das&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/scripts/controllers/dashboard-controller.js&#10;app.&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/scripts/app.js" />
+    <property name="SearchEverywhereHistoryKey" value="gitig&#9;FILE&#9;file:///Users/ctw/Sites/github/frontend-prototype/.gitignore&#10;.git&#9;FILE&#9;file:///Users/ctw/Sites/github/frontend-prototype/.gitignore&#10;stre&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/sass/framework/components/_strength.scss&#10;app&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/scripts/app.js&#10;sty&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/sass/styles.scss&#10;main&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/sass/framework/_main.scss&#10;index&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/index.html&#10;nav&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/views/main/menu-navbar.html&#10;drop&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/sass/lib/components/_dropdowns.scss&#10;sidebar&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/views/main/menu-sidebar.html&#10;side&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/sass/lib/layout/_sidebar.scss&#10;men&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/views/main/menu-navbar.html&#10;login&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/views/login-page-template.html&#10;footer&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/views/main/footer.html&#10;menu&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/views/main/menu-navbar.html&#10;foot&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/views/main/footer.html&#10;das&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/scripts/controllers/dashboard-controller.js&#10;app.&#9;FILE&#9;file://C:/Users/jgarcia/github/learlinq Frontend/app/scripts/app.js" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="FullScreen" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
@@ -322,12 +332,12 @@
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Gulp" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13174275" sideWeight="0.2365648" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13171355" sideWeight="0.2365648" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.13174275" sideWeight="0.7634352" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.76244813" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32980973" sideWeight="0.76244813" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -338,9 +348,9 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18360996" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18360996" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -761,23 +771,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.45098">
+        <state vertical-scroll-proportion="0.0">
           <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.83601284">
-          <caret line="80" column="20" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/modals/my-profile-modal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64972526">
+        <state vertical-scroll-proportion="-11.884615">
           <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
           <folding />
         </state>
@@ -785,8 +787,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/framework/_user-profile.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18681319">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.4352">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49325627">
+          <caret line="37" column="5" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
           <folding />
         </state>
       </provider>
