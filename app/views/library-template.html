@@ -8,14 +8,11 @@
 <!-- BEGIN PAGE CONTENT-->
 
 
-
-
-
 <div class="library-section">
 
     <div class="portlet-complete-header">
         <div class="input-group custom-search-form">
-            <input type="text" class="form-control" placeholder="Search material">
+            <input type="text" class="form-control" placeholder="Search material" autofocus ng-model="query">
             <button class="btn btn-special" type="button">
                 <span class="glyphicon glyphicon-search"></span>
             </button>
@@ -33,6 +30,7 @@
                         >
                     <label class="checkbox">
                         <input type="checkbox">
+
                         <div class="cb-check"></div>
                     </label>
                 </button>
@@ -72,151 +70,162 @@
         </div>
         <hr/>
     </div>
+    <div class="portlet-complete">
+        <div class="main">
 
-            <div class="portlet-complete">
-                <div class="main">
 
-                    <div class="material type-type1">
-                        <div class="selector">
+
+
+            <!--List of material-->
+        <div ng-repeat="material in materials | filter:query | orderBy: 'name' ">
+            <div class="material type-type1">
+                <div class="selector">
+                    <label class="checkbox">
+                        <input type="checkbox">
+
+                        <div class="cb-check"></div>
+                    </label>
+                    <img src="img/material-icon.png" alt="material"/>
+                </div>
+                <div class="name">
+                    <a href="">{{material.name}}</a>
+                </div>
+                <div class="type">{{material.type}}</div>
+                <div class="description">{{material.desc}}</div>
+
+                <div class="actions">
+                    <i class="fa fa-archive"
+                       tooltip-placement="top"
+                       tooltip="Archive"
+                       tooltip-popup-delay="100"></i>
+                    <i class="fa fa-trash"
+                       tooltip-placement="top"
+                       tooltip="Delete"
+                       tooltip-popup-delay="100"></i>
+                    <i class="fa fa-pencil"
+                       tooltip-placement="top"
+                       tooltip="Edit"
+                       tooltip-popup-delay="100"></i>
+                </div>
+
+            </div>
+            </div>
+        </div>
+        <div class="filter-side">
+            <div class="header">
+                Refine by
+            </div>
+            <div class="body">
+                <ul>
+                    <li>Types (450)</li>
+                    <ul>
+                        <li>
                             <label class="checkbox">
                                 <input type="checkbox">
+
                                 <div class="cb-check"></div>
+                                Filter (104)
                             </label>
-                            <img src="img/material-icon.png" alt="material"/>
-                        </div>
-                        <div class="name">
-                            <a href="">Name of the material</a>
-                        </div>
-                        <div class="type">Type</div>
-                        <div class="description">Description</div>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input type="checkbox">
 
-                        <div class="actions">
-                            <i class="fa fa-archive"
-                               tooltip-placement="top"
-                               tooltip="Archive"
-                               tooltip-popup-delay="100"></i>
-                            <i class="fa fa-trash"
-                               tooltip-placement="top"
-                               tooltip="Delete"
-                               tooltip-popup-delay="100"></i>
-                            <i class="fa fa-pencil"
-                               tooltip-placement="top"
-                               tooltip="Edit"
-                               tooltip-popup-delay="100"></i>
-                        </div>
-                        
-                    </div>
+                                <div class="cb-check"></div>
+                                Filter (104)
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input type="checkbox">
 
-                    
+                                <div class="cb-check"></div>
+                                Filter (104)
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input type="checkbox">
 
-                </div>
-                <div class="filter-side">
-                    <div class="header">
-                        Refine by
-                    </div>
-                    <div class="body">
-                       <ul>
-                           <li>Types (450)</li>
-                           <ul>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
+                                <div class="cb-check"></div>
+                                Filter (104)
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input type="checkbox">
 
-                           </ul>
-                           <li>Types (50)</li>
-                           <ul>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                           </ul>
-                       </ul>
+                                <div class="cb-check"></div>
+                                Filter (104)
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input type="checkbox">
+
+                                <div class="cb-check"></div>
+                                Filter (104)
+                            </label>
+                        </li>
+
+                    </ul>
+                    <li>Types (50)</li>
+                    <ul>
+                        <li>
+                            <label class="checkbox">
+                                <input type="checkbox">
+
+                                <div class="cb-check"></div>
+                                Filter (104)
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input type="checkbox">
+
+                                <div class="cb-check"></div>
+                                Filter (104)
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input type="checkbox">
+
+                                <div class="cb-check"></div>
+                                Filter (104)
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input type="checkbox">
+
+                                <div class="cb-check"></div>
+                                Filter (104)
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input type="checkbox">
+
+                                <div class="cb-check"></div>
+                                Filter (104)
+                            </label>
+                        </li>
+                        <li>
+                            <label class="checkbox">
+                                <input type="checkbox">
+
+                                <div class="cb-check"></div>
+                                Filter (104)
+                            </label>
+                        </li>
+                    </ul>
+                </ul>
 
 
-
-
-                    </div>
-                </div>
             </div>
+        </div>
+    </div>
 
-
-
-        <!-- END PAGE CONTENT-->
+    <!-- END PAGE CONTENT-->
 </div>
