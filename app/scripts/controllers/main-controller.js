@@ -20,4 +20,5 @@ App.controller('main-controller', function ($scope, $location) {
     $scope.toggleSidebar = function () {
         $scope.toggleState = !$scope.toggleState
     }
+
 });

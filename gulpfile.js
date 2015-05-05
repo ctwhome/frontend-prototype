@@ -23,7 +23,8 @@ var reload      = browserSync.reload;
 var vars = {
 		src: {
 			// Sources 
-		    scss: 'sass/styles.scss',
+//		    scss: 'sass/styles.scss',
+		    scss: 'sass/*.scss',
 	    	html: './app/**/*.html',
 	    	js: "./app/**/*.js",
 	    	server: "./app"
@@ -60,9 +61,10 @@ gulp.task('sass', function () {
         .pipe(sourcemaps.init())
             .pipe(sass())
                 .on('error', function(err){
-                    browserSync.notify(err.message, 3000);
+                    //browserSync.notify(err.message, 3000);
                     var error = "\nSASS ERROR"+separator+ 'Error: '+err.message + '\nFile: '+ err.fileName +'\nLine:'+err.lineNumber +separator;
                     console.log(error);
+                    browserSync.notify(error, 6000);
                     this.emit('end');
                 })
         .pipe(sourcemaps.write('./'))        
