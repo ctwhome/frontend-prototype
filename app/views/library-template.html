@@ -8,21 +8,17 @@
 <!-- BEGIN PAGE CONTENT-->
 
 
-
-
-
 <div class="library-section">
 
     <div class="portlet-complete-header">
         <div class="input-group custom-search-form">
-            <input type="text" class="form-control" placeholder="Search material">
+            <input type="text" class="form-control" placeholder="Search material" autofocus ng-model="query">
             <button class="btn btn-special" type="button">
                 <span class="glyphicon glyphicon-search"></span>
             </button>
         </div>
 
         <div class="btn-group filter" role="group" ng-controller="dropdown-controller">
-
             <!-- Simple dropdown -->
             <!-- Split button -->
             <div class="btn-group btn-checkbox" dropdown>
@@ -33,6 +29,7 @@
                         >
                     <label class="checkbox">
                         <input type="checkbox">
+
                         <div class="cb-check"></div>
                     </label>
                 </button>
@@ -65,7 +62,7 @@
                 <i class="fa fa-trash"></i></button>
         </div>
 
-        <div class="pull-right">
+        <div class="add-element-button">
             <button class="btn btn-primary add-element" type="button">
                 Add element
             </button>
@@ -73,150 +70,98 @@
         <hr/>
     </div>
 
-            <div class="portlet-complete">
-                <div class="main">
+    <div class="portlet-complete">
+        <div class="main">
 
-                    <div class="material type-type1">
-                        <div class="selector">
-                            <label class="checkbox">
-                                <input type="checkbox">
-                                <div class="cb-check"></div>
-                            </label>
-                            <img src="img/material-icon.png" alt="material"/>
-                        </div>
-                        <div class="name">
-                            <a href="">Name of the material</a>
-                        </div>
-                        <div class="type">Type</div>
-                        <div class="description">Description</div>
 
-                        <div class="actions">
-                            <i class="fa fa-archive"
-                               tooltip-placement="top"
-                               tooltip="Archive"
-                               tooltip-popup-delay="100"></i>
-                            <i class="fa fa-trash"
-                               tooltip-placement="top"
-                               tooltip="Delete"
-                               tooltip-popup-delay="100"></i>
-                            <i class="fa fa-pencil"
-                               tooltip-placement="top"
-                               tooltip="Edit"
-                               tooltip-popup-delay="100"></i>
-                        </div>
-                        
+            <!--<div>-->
+                <!--<div>-->
+                    <!--<div>-->
+                        <!--Search: <input name="company" type="text" class="search-input" ng-model="query2"/>-->
+                    <!--</div>-->
+                    <!--<div ng-init="pantsGroup = (players | groupBy:'pants')">-->
+                        <!--<div ng-repeat="pants in pantsGroup" >-->
+                            <!--<label class="checkbox">-->
+                                <!--<input type="checkbox" ng-model="usePants[$index]"/>{{pants}}-->
+
+                                <!--<div class="cb-check"></div>-->
+                            <!--</label>-->
+
+
+
+                            <!--<span>({{(players | filter:pants).length}})</span>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div>-->
+                        <!--<ul>-->
+                            <!--<li ng-repeat="player in players | filter:query2 | filter:filterPants(player)">-->
+                                <!--<p><b>{{player.name}}</b></p>-->
+                                <!--<p>{{player.shirt}} {{player.pants}}, {{player.shoes}}</p>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+
+            <!--List of material-->
+            <div ng-repeat="material in materials | filter:query as results">
+                <div class="material type-type1">
+                    <div class="selector">
+                        <label class="checkbox">
+                            <input type="checkbox">
+
+                            <div class="cb-check"></div>
+                        </label>
+                        <img src="img/material-icon.png" alt="material"/>
                     </div>
-
-                    
-
-                </div>
-                <div class="filter-side">
-                    <div class="header">
-                        Refine by
+                    <div class="name">
+                        <a href="">{{material.name}}</a>
                     </div>
-                    <div class="body">
-                       <ul>
-                           <li>Types (450)</li>
-                           <ul>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-
-                           </ul>
-                           <li>Types (50)</li>
-                           <ul>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                               <li>
-                                   <label class="checkbox">
-                                       <input type="checkbox">
-                                       <div class="cb-check"></div>
-                                       Filter (104)
-                                   </label>
-                               </li>
-                           </ul>
-                       </ul>
-
-
-
-
+                    <div class="type">{{material.type}}</div>
+                    <div class="description">{{material.desc}}</div>
+                    <div class="actions">
+                        <i class="fa fa-archive" tooltip-placement="top" tooltip="Archive" tooltip-popup-delay="100"></i>
+                        <i class="fa fa-trash" tooltip-placement="top" tooltip="Delete" tooltip-popup-delay="100"></i>
+                        <i class="fa fa-pencil" tooltip-placement="top" tooltip="Edit" tooltip-popup-delay="100"></i>
                     </div>
                 </div>
             </div>
+            <div class="no-results" ng-if="results.length == 0">
+                No results for this search...
+            </div>
 
 
+        </div>
 
-        <!-- END PAGE CONTENT-->
+        <!--Filter column-->
+        <!--Use this for the filter-->
+        <!--http://jsfiddle.net/rzgWr/13/-->
+
+        <div class="filter-side">
+            <div class="header">
+                Refine search
+            </div>
+            <div class="body">
+
+                <ul>
+                    <li>Filter by type ({{types.length}})</li>
+                    <ul>
+                        <li ng-repeat="types in types = (types | unique:'type')">
+                            <label class="checkbox">
+                                <input type="checkbox" data-ng-model="query" ng-true-value="'yellow'" ng-true-false="''">
+
+                                <div class="cb-check"></div>
+                                {{types.type}}
+                            </label>
+                        </li>
+                    </ul>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- END PAGE CONTENT-->
 </div>

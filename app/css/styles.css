@@ -82,6 +82,15 @@ b, strong {
   -moz-box-shadow: none;
   box-shadow: none; }
 
+.no-results {
+  color: #999999;
+  font-size: 1.2em;
+  font-weight: 300;
+  background-color: #fafafa;
+  height: 55px;
+  border-left: 3px solid #e5e5e5;
+  padding: 15px; }
+
 /* libraries - Structure and layout files.
 ========================================================================== */
 @media print {
@@ -13259,8 +13268,9 @@ ul#strength {
     height: 35px;
     width: 80px; }
 
-.library-section .add-element {
-  padding: auto 30px; }
+.library-section .add-element-button {
+  padding: auto 30px;
+  float: right; }
 
 .btn-group.filter .dropdown-toggle, .btn-group.filter .single-button {
   width: 75px;
@@ -13346,13 +13356,14 @@ ul#strength {
 
 .material {
   position: relative;
+  margin-bottom: 10px;
   background-color: #fafafa;
-  height: 60px;
+  height: 55px;
   vertical-align: middle; }
-  .material.type-type1 {
-    border-left: 3px #F7A649 solid; }
   .material:hover {
     background-color: #f2f2f2; }
+  .material.type-type1 {
+    border-left: 3px #F7A649 solid; }
   .material .selector {
     float: left;
     margin-right: 20px; }

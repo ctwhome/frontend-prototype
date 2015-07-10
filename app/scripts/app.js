@@ -11,6 +11,7 @@
 var App = angular.module('App', [
     'ui.router',
     'ui.bootstrap',
+    'ui.utils',
     'ui.select',
     'ngSanitize'
 ])
